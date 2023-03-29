@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    // random letter in string
+    // function getRandomLetterFromString(string) {
+    //     if(string) {
+    //         let trimmedString = string.replace(/ /g, '')
+    //         if(trimmedString.length) {
+    //             let randomIndex = Math.round(Math.random() * (trimmedString.length - 1))
+    //             console.log('random letter is ' + trimmedString[randomIndex])
+    //         }
+    //         else {
+    //             console.error('String contains only whitespaces')
+    //         }
+    //     } else {
+    //         console.error("String in not set")
+    //     }
+    // }
+    // getRandomLetterFromString("Vlad")
+    // getRandomLetterFromString("Test")
+    // getRandomLetterFromString("JavaScript")
+    // getRandomLetterFromString("         H e l l o W o r l d         ")
+    // getRandomLetterFromString("A ")
+    // getRandomLetterFromString()
+    // getRandomLetterFromString(" ")
+
+    // --------------------------------------------- //
+
+    // first letter to upperCase
+    function ucFirst(str) {
+        if(str.length) {
+            let firstLetter = str[0]
+            let trimmedString = str.slice(1)
+            return firstLetter.toUpperCase() + trimmedString
+        } else {
+            console.error('empty string')
+        }
+        // параметры функции
+        // выбрать первую букву
+        // сделать её заглавной
+        // как добавить первую заглавную букву к строке
+        // вернуть значение
+        // TODO: клонировать РЕПО, создать ветку со своим иминем и залить туда свою ДЗ
+        // TODO: добавить валидацию:
+        // TODO: 1. проверку не является ли этот символ уже большой буквой
+        // TODO: 1.1 если символ большой, то возвращать эту строку, ничего не делая с ней дополнительно
+        // TODO: 2. проверку не является ли этот символ пробелом
+        // TODO: 2.1 если пробел, то обрезать строку и делать первый символ, который не пробел большим
+        // TODO: 3 проверить кейсы, которые я мог не учесть
+    }
+    console.log(ucFirst('Данные от сервера'))
+</script>
+</body>
+</html>
