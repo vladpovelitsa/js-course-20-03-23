@@ -37,14 +37,37 @@
     // --------------------------------------------- //
 
     // first letter to upperCase
-    function ucFirst(str) {
-        if(str.length) {
-            let firstLetter = str[0]
-            let trimmedString = str.slice(1)
-            return firstLetter.toUpperCase() + trimmedString
-        } else {
-            console.error('empty string')
-        }
+    	function ucFirst(str) {
+    			if(str.length) {
+    					let firstLetter = str[0]
+    					if (firstLetter === ' ') {
+    						let strСlean = str.trim()
+    						let firstLetter = strСlean[0]
+    						if (firstLetter === firstLetter.toUpperCase()) {
+    							return strСlean
+    							// в верхнем
+    						} else {
+    							let trimmedString = str.trim().slice(1)
+    							return firstLetter.toUpperCase() + trimmedString
+    							// в нижнем
+    					 } } else {
+    						if (firstLetter === firstLetter.toUpperCase()) {
+    							return str
+    							// в верхнем
+    						} {
+    							let trimmedString = str.slice(1)
+    							return firstLetter.toUpperCase() + trimmedString
+    							// в нижнем
+    						}
+    					}
+    			} else {
+    					console.error('empty string')
+    			}
+    		}
+     console.log(ucFirst('      данные от сервера'))
+     console.log(ucFirst('L'))
+     console.log(ucFirst('l'))
+     console.log(ucFirst('Данные от сервера        '))
         // параметры функции
         // выбрать первую букву
         // сделать её заглавной
@@ -57,8 +80,6 @@
         // TODO: 2. проверку не является ли этот символ пробелом
         // TODO: 2.1 если пробел, то обрезать строку и делать первый символ, который не пробел большим
         // TODO: 3 проверить кейсы, которые я мог не учесть
-    }
-    console.log(ucFirst('Данные от сервера'))
 </script>
 </body>
 </html>
